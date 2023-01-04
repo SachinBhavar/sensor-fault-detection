@@ -1,6 +1,6 @@
 import pymongo
 from sensor.constant.database import DATABASE_NAME
-from sensor.constant.env_variable import MONGODB_URI_KEY
+#from sensor.constant.env_variable import MONGODB_URI_KEY
 import certifi
 import os
 ca=certifi.where()
