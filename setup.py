@@ -1,39 +1,22 @@
 from setuptools import find_packages,setup
 from typing import List
 
-
 def get_requirements()->List[str]:
     """
     This function will return list of requirements
     """
-    requirement_list:list[str]=[]
-    
-# write a code to read requirement.txt file and append each requirements in requirement list variable
-    # opening the file in read mode
-    my_file = open("requirements.txt", "r")
+    requirement_list:List[str] = []
 
-# reading the file
-    data = my_file.read()
-
-# replacing end splitting the text
-# when newline ('\n') is seen.
-    data_into_list = data.split("\n")
-    requirement_list.append(data_into_list)
-    my_file.close()
-
+    """
+    Write a code to read requirements.txt file and append each requirements in requirement_list variable.
+    """
     return requirement_list
 
-
-
-
-setup(   
+setup(
     name="sensor",
     version="0.0.1",
-    author="sachinbhavar", 
-    author_email="bhavarsachin@gmail.com",
-    packages=find_packages(),
-    install_requires=get_requirements()
+    author="ineuron",
+    author_email="avnish@ineuron.ai",
+    packages = find_packages(),
+    install_requires=get_requirements(),#["pymongo==4.2.0"],
 )
- 
-
-

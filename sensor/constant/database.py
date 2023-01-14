@@ -1,1 +1,1 @@
-DATABASE_NAME="swarajya"
+DATABASE_NAME="inueron"
